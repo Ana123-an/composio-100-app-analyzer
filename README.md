@@ -5,22 +5,14 @@ An autonomous multi-agent pipeline built with **Composio SDK** and **Browser-Use
 ---
 
 ## 🏗️ Architecture & Verification Loop
-```mermaid
-flowchart TD
-    A[100 Apps Seed] --> B[SearchAgent<br><i>Composio Search Tools</i>]
-    B --> C[ExtractAgent<br><i>Pydantic Schema Parser</i>]
-    C --> D{Confidence Check<br>&ge; 90%?}
+### 🔄 Pipeline Execution Stages
 
-    D -- PASS --> E[High Conf Record]
-    D -- FAIL --> F[BrowserAgent<br><i>Browser-Use DOM Reader</i>]
-
-    F --> G{Verification Check<br>Passed?}
-    G -- PASS --> H[Verified Record]
-    G -- FAIL --> I[Human-in-the-Loop]
-
-    E --> J[Final CSV & HTML Data Export]
-    H --> J
-    I --> J
+1. **Discovery (`SearchAgent`)**: Interrogates web search APIs via Composio SDK tools to locate developer documentation, auth specifications, and API endpoints.
+2. **Structuring (`ExtractAgent`)**: Parses search payloads into strict Pydantic data structures (`AuthMethod`, `AccessModel`, `APISurface`).
+3. **Primary Evaluation (`Confidence Check`)**: Records scoring $\ge 0.90$ bypass secondary loops and go straight to export.
+4. **DOM Inspection (`BrowserAgent`)**: For records scoring $< 0.90$, a headless browser navigates directly to the documentation DOM to inspect auth headers and sign-up requirements.
+5. **Human-in-the-Loop (`HitL`)**: If the browser agent encounters login barriers, SSO gates, or partner walls, the record is flagged for human review.
+6. **Data Output**: Synthesizes structured data into `research.csv`, `results.json`, and `index.html`.
 
 ### Key Design Pillars
 
