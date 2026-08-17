@@ -1,0 +1,102 @@
+```csv
+App Number,Category,App Name,Website,Auth Method,Access Model,API Surface,Buildability Verdict,Blocker,Docs URL
+1,CRM and Sales,Salesforce,salesforce.com,OAuth2,Self-serve (Sandbox),Extensive REST/SOQL,Agent-ready,None,developer.salesforce.com
+2,CRM and Sales,HubSpot,hubspot.com,OAuth2 / PAT,Self-serve,Extensive REST,Agent-ready,None,developers.hubspot.com
+3,CRM and Sales,Pipedrive,pipedrive.com,OAuth2 / API Key,Self-serve,REST API,Agent-ready,None,pipedrive.readme.io
+4,CRM and Sales,Attio,attio.com,OAuth2 / Token,Self-serve,REST API,Agent-ready,None,docs.attio.com
+5,CRM and Sales,Twenty,twenty.com,Bearer Token,Self-serve,GraphQL / REST,Agent-ready,None,developers.twenty.com
+6,CRM and Sales,Podio,podio.com,OAuth2,Self-serve,REST API,Agent-ready,None,developers.podio.com
+7,CRM and Sales,Zoho CRM,zoho.com/crm,OAuth2,Self-serve,REST API,Agent-ready,None,zoho.com/crm/developer
+8,CRM and Sales,Close,close.com,API Key (Basic),Self-serve,REST API,Agent-ready,None,developer.close.com
+9,CRM and Sales,Copper,copper.com,API Key,Self-serve,REST API,Agent-ready,None,developer.copper.com
+10,CRM and Sales,DealCloud,api.docs.dealcloud.com,OAuth2 / Client Creds,Gated,REST API,Hard Blocked,Enterprise contract required,api.docs.dealcloud.com
+11,Support and Helpdesk,Zendesk,zendesk.com,OAuth2 / API Token,Self-serve,Extensive REST,Agent-ready,None,developer.zendesk.com
+12,Support and Helpdesk,Intercom,intercom.com,OAuth2 / Access Token,Self-serve,REST API,Agent-ready,None,developers.intercom.com
+13,Support and Helpdesk,Freshdesk,freshdesk.com,API Key (Basic),Self-serve,REST API,Agent-ready,None,developers.freshdesk.com
+14,Support and Helpdesk,Front,front.com,OAuth2 / API Token,Self-serve,REST API,Agent-ready,None,dev.frontapp.com
+15,Support and Helpdesk,Pylon,usepylon.com,Bearer Token,Self-serve,REST API,Agent-ready,None,docs.usepylon.com/pylon-docs
+16,Support and Helpdesk,LiveAgent,liveagent.com,API Key,Self-serve,REST API,Agent-ready,None,liveagent.com/api
+17,Support and Helpdesk,Plain,plain.com,API Key / Bearer,Self-serve,GraphQL + MCP Server,Agent-ready,None,plain.com/docs/graphql
+18,Support and Helpdesk,Help Scout,helpscout.com,OAuth2,Self-serve,REST API,Agent-ready,None,developer.helpscout.com
+19,Support and Helpdesk,Gorgias,gorgias.com,Basic (API Key),Self-serve,REST API,Agent-ready,None,developers.gorgias.com
+20,Support and Helpdesk,Gladly,gladly.com,Basic (API Token),Self-serve,REST API,Agent-ready,None,developer.gladly.com
+21,Communications and Messaging,Slack,slack.com,OAuth2 / Bot Token,Self-serve,Web API / Events,Agent-ready,None,api.slack.com
+22,Communications and Messaging,Twilio,twilio.com,Account SID/Token (Basic),Self-serve,REST API,Agent-ready,None,twilio.com/docs
+23,Communications and Messaging,Zoho Cliq,zoho.com/cliq,OAuth2,Self-serve,REST API,Agent-ready,None,zoho.com/cliq/help/restapi
+24,Communications and Messaging,Lark (Larksuite),open.larksuite.com,Tenant Access Token,Self-serve,REST API,Agent-ready,None,open.larksuite.com
+25,Communications and Messaging,Pumble,pumble.com,API Key,Self-serve,REST API,Agent-ready,None,pumble.com/api
+26,Communications and Messaging,Discord,discord.com,OAuth2 / Bot Token,Self-serve,REST API / WebSocket,Agent-ready,None,discord.com/developers
+27,Communications and Messaging,Telegram,core.telegram.org,Bot Token,Self-serve,Bot API (REST),Agent-ready,None,core.telegram.org/bots/api
+28,Communications and Messaging,WhatsApp Business,developers.facebook.com/docs/whatsapp,Bearer Token,Self-serve (Meta Dev),Cloud API,Agent-ready,None,developers.facebook.com/docs/whatsapp
+29,Communications and Messaging,Aircall,aircall.io,OAuth2 / Basic,Self-serve,REST API,Agent-ready,None,developer.aircall.io
+30,Communications and Messaging,Vonage,developer.vonage.com,API Key / JWT,Self-serve,REST API,Agent-ready,None,developer.vonage.com
+31,Marketing Ads Email and Social,Google Ads,developers.google.com/google-ads,OAuth2 + Dev Token,Self-serve (Review req),gRPC / REST,Agent-ready,Requires approved dev token,developers.google.com/google-ads
+32,Marketing Ads Email and Social,Meta Ads,developers.facebook.com/docs/marketing-apis,OAuth2 / System User,Self-serve,Graph API,Agent-ready,App review for production,developers.facebook.com/docs/marketing-apis
+33,Marketing Ads Email and Social,LinkedIn Ads,learn.microsoft.com/linkedin/marketing,OAuth2,Gated (Approval req),REST API,Hard Blocked,Strict LinkedIn developer approval,learn.microsoft.com/linkedin/marketing
+34,Marketing Ads Email and Social,GoHighLevel,highlevel.stoplight.io,OAuth2,Gated,REST API,Blocked,Requires Agency Pro account,highlevel.stoplight.io
+35,Marketing Ads Email and Social,Mailchimp,mailchimp.com/developer,OAuth2 / API Key,Self-serve,REST API,Agent-ready,None,mailchimp.com/developer
+36,Marketing Ads Email and Social,Klaviyo,developers.klaviyo.com,API Key,Self-serve,REST API,Agent-ready,None,developers.klaviyo.com
+37,Marketing Ads Email and Social,systeme.io,systeme.io,API Key,Self-serve,REST API,Agent-ready,None,help.systeme.io
+38,Marketing Ads Email and Social,Pinterest,developers.pinterest.com,OAuth2,Self-serve,REST API,Agent-ready,None,developers.pinterest.com
+39,Marketing Ads Email and Social,Threads (Meta),developers.facebook.com/docs/threads,OAuth2,Self-serve,Graph API,Agent-ready,None,developers.facebook.com/docs/threads
+40,Marketing Ads Email and Social,SendGrid,sendgrid.com,API Key,Self-serve,REST API,Agent-ready,None,docs.sendgrid.com
+41,Ecommerce,Shopify,shopify.dev,OAuth2 / Access Token,Self-serve (Partner),GraphQL / REST,Agent-ready,None,shopify.dev
+42,Ecommerce,WooCommerce,woocommerce.com/document/woocommerce-rest-api,Basic Auth / OAuth1.0a,Self-serve,REST API,Agent-ready,Requires WP installation,woocommerce.com/document/woocommerce-rest-api
+43,Ecommerce,BigCommerce,developer.bigcommerce.com,OAuth2 / X-Auth-Token,Self-serve,REST / GraphQL,Agent-ready,None,developer.bigcommerce.com
+44,Ecommerce,Salesforce Commerce Cloud,developer.salesforce.com/docs/commerce,OAuth2,Gated,SCAPI REST,Hard Blocked,Partner/Enterprise account required,developer.salesforce.com/docs/commerce
+45,Ecommerce,Magento (Adobe Commerce),developer.adobe.com/commerce,Bearer Token / OAuth,Self-serve (Open Source),REST / GraphQL,Agent-ready,None,developer.adobe.com/commerce
+46,Ecommerce,Squarespace,developers.squarespace.com,API Key,Self-serve,REST API,Agent-ready,None,developers.squarespace.com
+47,Ecommerce,Ecwid,api-docs.ecwid.com,OAuth2 / Token,Self-serve,REST API,Agent-ready,None,api-docs.ecwid.com
+48,Ecommerce,Gumroad,gumroad.com/api,OAuth2 / API Key,Self-serve,REST API,Agent-ready,None,gumroad.com/api
+49,Ecommerce,Amazon Selling Partner,developer-docs.amazon.com/sp-api,OAuth2 / STS Tokens,Gated,REST API,Blocked,Strict Developer Registration Review,developer-docs.amazon.com/sp-api
+50,Ecommerce,fanbasis,fanbasis.com,API Key,Gated,REST API,Hard Blocked,Requires partnership / sales call,fanbasis.com
+51,Data SEO and Scraping,DataForSEO,docs.dataforseo.com,Basic Auth,Self-serve,REST API,Agent-ready,None,docs.dataforseo.com
+52,Data SEO and Scraping,SE Ranking,seranking.com/api,API Key,Self-serve (Paid tier),REST API,Agent-ready,None,seranking.com/api
+53,Data SEO and Scraping,Ahrefs,ahrefs.com/api,Bearer Token,Self-serve (Enterprise tier),REST API,Agent-ready,High cost tier required,ahrefs.com/api
+54,Data SEO and Scraping,MrScraper,docs.mrscraper.com,Bearer Token,Self-serve,REST API,Agent-ready,None,docs.mrscraper.com
+55,Data SEO and Scraping,Apify,docs.apify.com,API Token,Self-serve,REST API,Agent-ready,None,docs.apify.com
+56,Data SEO and Scraping,Firecrawl,firecrawl.dev,Bearer Token,Self-serve,REST API,Agent-ready,None,docs.firecrawl.dev
+57,Data SEO and Scraping,Bright Data,brightdata.com,Bearer Token,Self-serve,REST API,Agent-ready,None,docs.brightdata.com
+58,Data SEO and Scraping,Sherlock,github.com/sherlock-project/sherlock,None,Self-serve (Open Source),CLI Only,Requires CLI Wrapper,No REST API,github.com/sherlock-project/sherlock
+59,Data SEO and Scraping,Waterfall.io,waterfall.io,N/A,Gated,Undocumented,Hard Blocked,Sales-led ecosystem no public docs,waterfall.io
+60,Data SEO and Scraping,Clay,clay.com,API Key,Self-serve,REST API,Agent-ready,None,clay.com/docs/api
+61,Developer Infra and Data platforms,GitHub,docs.github.com/rest,OAuth2 / PAT,Self-serve,REST / GraphQL,Agent-ready,None,docs.github.com/rest
+62,Developer Infra and Data platforms,Vercel,vercel.com/docs/rest-api,Bearer Token,Self-serve,REST API,Agent-ready,None,vercel.com/docs/rest-api
+63,Developer Infra and Data platforms,Netlify,docs.netlify.com/api,OAuth2 / PAT,Self-serve,REST API,Agent-ready,None,docs.netlify.com/api
+64,Developer Infra and Data platforms,Cloudflare,developers.cloudflare.com/api,Bearer Token,Self-serve,REST API,Agent-ready,None,developers.cloudflare.com/api
+65,Developer Infra and Data platforms,Supabase,supabase.com/docs,Bearer Token,Self-serve,REST / GraphQL,Agent-ready,None,supabase.com/docs/reference/api
+66,Developer Infra and Data platforms,Neo4j,neo4j.com/docs/api,Basic Auth / Bearer,Self-serve,Cypher HTTP API,Agent-ready,None,neo4j.com/docs/api
+67,Developer Infra and Data platforms,Snowflake,docs.snowflake.com,OAuth / Key-Pair,Self-serve,SQL API (REST),Agent-ready,None,docs.snowflake.com
+68,Developer Infra and Data platforms,MongoDB Atlas,mongodb.com/docs/atlas/api,Digest Auth (Keys),Self-serve,REST API,Agent-ready,None,mongodb.com/docs/atlas/api
+69,Developer Infra and Data platforms,Datadog,docs.datadoghq.com/api,API + App Key,Self-serve,REST API,Agent-ready,None,docs.datadoghq.com/api
+70,Developer Infra and Data platforms,Sentry,docs.sentry.io/api,Bearer Token,Self-serve,REST API,Agent-ready,None,docs.sentry.io/api
+71,Productivity and Project Management,Notion,developers.notion.com,OAuth2 / Internal Token,Self-serve,REST API,Agent-ready,None,developers.notion.com
+72,Productivity and Project Management,Airtable,airtable.com/developers,OAuth2 / PAT,Self-serve,REST API,Agent-ready,None,airtable.com/developers/web/api
+73,Productivity and Project Management,Linear,developers.linear.app,OAuth2 / PAT,Self-serve,GraphQL,Agent-ready,None,developers.linear.app
+74,Productivity and Project Management,Jira,developer.atlassian.com,OAuth 2.0 / Basic (Token),Self-serve,REST API,Agent-ready,None,developer.atlassian.com
+75,Productivity and Project Management,Asana,developers.asana.com,OAuth2 / PAT,Self-serve,REST API,Agent-ready,None,developers.asana.com
+76,Productivity and Project Management,Monday.com,developer.monday.com,OAuth2 / API Token,Self-serve,GraphQL,Agent-ready,None,developer.monday.com
+77,Productivity and Project Management,ClickUp,clickup.com/api,OAuth2 / PAT,Self-serve,REST API,Agent-ready,None,clickup.com/api
+78,Productivity and Project Management,Coda,coda.io/developers,Bearer Token,Self-serve,REST API,Agent-ready,None,coda.io/developers/apis/v1
+79,Productivity and Project Management,Smartsheet,smartsheet.com/developers,OAuth2 / Bearer,Self-serve,REST API,Agent-ready,None,smartsheet.com/developers
+80,Productivity and Project Management,Harvest,harvestapp.com,OAuth2 / PAT,Self-serve,REST API,Agent-ready,None,help.getharvest.com/api-v2
+81,Finance and Fintech,Stripe,stripe.com/docs/api,Bearer Token,Self-serve,REST API,Agent-ready,None,stripe.com/docs/api
+82,Finance and Fintech,Plaid,plaid.com/docs,Client ID + Secret,Self-serve,REST API,Agent-ready,None,plaid.com/docs
+83,Finance and Fintech,Binance,binance-docs.github.io,API Key + Signature,Self-serve,REST / WebSocket,Agent-ready,None,binance-docs.github.io
+84,Finance and Fintech,Paygent Connect,paygent,Basic Auth / Token,Gated,REST API,Hard Blocked,Requires merchant account approval,paygent (NMI-powered)
+85,Finance and Fintech,iPayX,ipayx.ai/docs,Bearer Token,Self-serve,REST / MCP Server,Agent-ready,None,ipayx.ai/docs
+86,Finance and Fintech,QuickBooks,developer.intuit.com,OAuth2,Self-serve,REST API,Agent-ready,None,developer.intuit.com
+87,Finance and Fintech,Xero,developer.xero.com,OAuth2,Self-serve,REST API,Agent-ready,None,developer.xero.com
+88,Finance and Fintech,Brex,developer.brex.com,OAuth2 / Bearer Token,Self-serve,REST API,Agent-ready,None,developer.brex.com
+89,Finance and Fintech,Ramp,docs.ramp.com,OAuth2,Self-serve,REST API,Agent-ready,None,docs.ramp.com
+90,Finance and Fintech,PitchBook,pitchbook.com,Bearer Token,Gated,REST API,Hard Blocked,Enterprise subscription required,pitchbook.com/products/api
+91,AI Research and Media-native,NotebookLM,cloud.google.com/gemini,OAuth2 (GCP),Self-serve (GCP),Gemini Enterprise API,Agent-ready,No direct notebook-level API yet,cloud.google.com
+92,AI Research and Media-native,Otter AI,help.otter.ai,OAuth2,Self-serve,REST / GraphQL,Agent-ready,None,help.otter.ai
+93,AI Research and Media-native,Fathom,fathom.video,Bearer Token,Self-serve,REST API,Agent-ready,None,fathom.video
+94,AI Research and Media-native,Consensus,consensus.app,OAuth2 / Token,Self-serve,REST API,Agent-ready,None,consensus.app
+95,AI Research and Media-native,Reducto,reducto.ai,API Key,Self-serve,REST API,Agent-ready,None,docs.reducto.ai
+96,AI Research and Media-native,Devin,docs.devin.ai,Bearer Token,Self-serve,REST / MCP Server,Agent-ready,None,docs.devin.ai
+97,AI Research and Media-native,higgsfield,higgsfield.ai/cli,Auth Token,Self-serve,CLI / MCP Server,Requires CLI Wrapper,No public REST endpoints,higgsfield.ai/cli
+98,AI Research and Media-native,Mermaid CLI,github.com/mermaid-js/mermaid-cli,None,Self-serve (Open Source),CLI Only,Requires CLI Wrapper,Local execution required,github.com/mermaid-js/mermaid-cli
+99,AI Research and Media-native,YouTube Transcript,transcriptapi.com,None,Self-serve (Open Source),Python API,Requires wrapper library,Not a REST service,pypi.org/project/youtube-transcript-api
+100,AI Research and Media-native,Grain,grain.com,Bearer Token,Self-serve,REST API,Agent-ready,None,grain.com/api
