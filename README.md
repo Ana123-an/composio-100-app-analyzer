@@ -5,48 +5,23 @@ An autonomous multi-agent pipeline built with **Composio SDK** and **Browser-Use
 ---
 
 ## 🏗️ Architecture & Verification Loop
-┌─────────────────────────┐
-                    │      100 Apps Seed      │
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │       SearchAgent       │
-                    │ (Composio Search Tools) │
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │      ExtractAgent       │
-                    │ (Pydantic Schema Parser)│
-                    └────────────┬────────────┘
-                                 │
-                  ┌──────────────┴──────────────┐
-                  │  Confidence Check (>= 90%)  │
-                  └──────┬───────────────┬──────┘
-                         │ PASS          │ FAIL
-                         ▼               ▼
-                  ┌─────────────┐ ┌─────────────────────────┐
-                  │ High Conf   │ │      BrowserAgent       │
-                  │ Record      │ │ (Browser-Use DOM Reader)│
-                  └──────┬──────┘ └──────────────┬──────────┘
-                         │                       │
-                         │        ┌──────────────┴──────────────┐
-                         │        │ Verification Check (Passed) │
-                         │        └──────┬───────────────┬──────┘
-                         │               │ PASS          │ FAIL
-                         │               ▼               ▼
-                         │        ┌─────────────┐ ┌─────────────┐
-                         │        │ Verified    │ │ Human-in-   │
-                         │        │ Record      │ │ the-Loop    │
-                         │        └──────┬──────┘ └──────┬──────┘
-                         │               │               │
-                         └───────────────┼───────────────┘
-                                         │
-                                         ▼
-                           ┌───────────────────────────┐
-                           │ Final CSV & HTML Data Export
-                           └───────────────────────────┘
+```mermaid
+flowchart TD
+    A[100 Apps Seed] --> B[SearchAgent<br><i>Composio Search Tools</i>]
+    B --> C[ExtractAgent<br><i>Pydantic Schema Parser</i>]
+    C --> D{Confidence Check<br>&ge; 90%?}
+
+    D -- PASS --> E[High Conf Record]
+    D -- FAIL --> F[BrowserAgent<br><i>Browser-Use DOM Reader</i>]
+
+    F --> G{Verification Check<br>Passed?}
+    G -- PASS --> H[Verified Record]
+    G -- FAIL --> I[Human-in-the-Loop]
+
+    E --> J[Final CSV & HTML Data Export]
+    H --> J
+    I --> J
+
 ### Key Design Pillars
 
 1. **Discovery Layer (`SearchAgent`)**: Uses `composio.get_tools(apps=[App.GOOGLE_SEARCH])` to target official API reference pages and developer documentation.
